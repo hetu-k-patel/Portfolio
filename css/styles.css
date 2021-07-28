@@ -9,6 +9,7 @@
 html {
    font-family: 'Montserrat', sans-serif;
    color: white;
+   scroll-behavior: smooth;
 }
 
 a {
@@ -69,6 +70,10 @@ header nav.navbar .menu ul li a {
    width: 100%;
    background: rgba(0, 0, 0, 0.8);
    z-index: 0;
+}
+
+.home .navbar .logo img {
+   width: 90px;
 }
 
 .slider-area {
@@ -163,7 +168,8 @@ header nav.navbar .menu ul li a {
 }
 
 .about .about-content .about-description {
-   margin: 0 30px;
+   margin: 0;
+   /* text-align: center; */
 }
 
 .about .about-content .about-description h1 {
@@ -183,6 +189,7 @@ header nav.navbar .menu ul li a {
 
 .about .about-content .about-description .about-buttons {
    margin-top: 65px;
+   /* text-align: center; */
 }
 
 .about .about-content .about-description .about-buttons a {
@@ -230,7 +237,7 @@ header nav.navbar .menu ul li a {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 40px;
-   margin: 65px 0;
+   margin: 60px 0;
 }
 
 .skills .skills-content .skills-content-wrapper {
@@ -292,4 +299,194 @@ header nav.navbar .menu ul li a {
 
 .skills .skills-content .skills-content-wrapper:nth-child(4) ::after {
    content: '70%';
+}
+
+.resume {
+   background-color: black;
+   padding: 80px 0;
+}
+
+.section-heading {
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.section-heading h1 {
+   font-size: 34px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   position: relative;
+   display: inline-block;
+}
+
+.section-heading h1::before {
+   content: '';
+   width: 8px;
+   height: 8px;
+   font-size: 10px;
+   background-color: white;
+   display: inline-block;
+   transform: rotate(45deg);
+   position: absolute;
+   top: 40%;
+   left: -20%;
+}
+
+.section-heading h1::after {
+   content: '';
+   width: 8px;
+   height: 8px;
+   font-size: 10px;
+   background-color: white;
+   display: inline-block;
+   transform: rotate(45deg);
+   position: absolute;
+   top: 40%;
+   right: -20%;
+}
+
+.resume .resume-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 60px;
+}
+
+.resume .resume-content .resume-content-education .education-heading,
+.resume .resume-content .resume-content-experience .experience-heading {
+   margin-bottom: 30px;
+}
+
+.resume .resume-content .resume-content-education .education-heading h2,
+.resume .resume-content .resume-content-experience .experience-heading h2 {
+   font-size: 30px;
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+
+.resume .education-content-wrapper,
+.resume .experience-content-wrapper {
+   display: grid;
+   gap: 35px;
+}
+
+.resume .education-content-wrapper div,
+.resume .experience-content-wrapper div {
+   padding: 20px;
+   background-color: #121212;
+   position: relative;
+}
+
+.resume .education-content-wrapper div p,
+.resume .experience-content-wrapper div p {
+   font-size: 13px;
+   color: gray;
+   margin-bottom: 25px;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+.resume .education-content-wrapper div h3,
+.resume .experience-content-wrapper div h3 {
+   font-weight: 700;
+   margin-bottom: 15px;
+   letter-spacing: 1.5px;
+}
+
+.resume .education-content-wrapper div::after,
+.resume .experience-content-wrapper div::after {
+   content: '';
+   position: absolute;
+   height: 2px;
+   width: 80%;
+   background-color: white;
+   bottom: 0;
+   left: 10%;
+}
+
+@media (max-width: 768px) {
+   .menu {
+      display: none;
+   }
+
+   .home .navbar .logo img {
+      width: 70px;
+   }
+
+   .slider .slider-content h1 {
+      font-size: 26px;
+      margin: 20px 0;
+   }
+
+   .slider .slider-content {
+      margin-top: 45px;
+      margin-bottom: 22px;
+   }
+
+   .slider .slider-content ul {
+      flex-direction: column;
+   }
+
+   .slider .slider-content ul li {
+      margin: 10px 25px;
+   }
+
+   .slider .slider-content ul li::after {
+      content: '';
+      display: none;
+   }
+
+   .slider .slider-social-icons ul {
+      flex-wrap: wrap;
+   }
+
+   .slider .slider-social-icons ul li {
+      margin: 10px 10px;
+   }
+
+   .about .about-content {
+      flex-direction: column;
+   }
+
+   .about .about-content .about-profile {
+      margin-bottom: 30px;
+   }
+
+   .about .about-content .about-profile img {
+      width: 200px;
+   }
+
+   .about .about-content .about-description .about-buttons {
+      text-align: center;
+   }
+
+   .about .about-content .about-description h1 {
+      margin-bottom: 20px;
+      text-align: center;
+   }
+
+   .about .about-content .about-description .about-buttons a {
+      margin-bottom: 20px;
+   }
+
+   .skills .section-heading {
+      margin-bottom: 30px;
+   }
+
+   .section-heading h1 {
+      font-size: 24px;
+   }
+
+   .skills .skills-content {
+      grid-template-columns: 1fr;
+      margin: 20px 0;
+   }
+
+   .resume {
+      padding: 60px 0;
+   }
+
+   .resume .resume-content {
+      grid-template-columns: 1fr;
+   }
 }
