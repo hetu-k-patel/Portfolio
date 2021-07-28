@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+.container {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.navbar-menu {
+   position: relative;
+}
+
+header nav.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 40px;
+}
+
+header nav.navbar .menu ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header nav.navbar .menu ul li {
+   margin: 0 20px;
+}
+
+header nav.navbar .menu ul li a {
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 600;
+   letter-spacing: 1.5px;
+   padding: 0;
+   color: white;
+}
+
+.home {
+   background: url(../images/header-bg.jpg) no-repeat scroll center 100% / cover;
+   position: relative;
+   height: 100vh;
+}
+
+.home::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.8);
+   z-index: 0;
+}
+
+.slider-area {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   position: relative;
+}
+
+.slider .slider-content {
+   margin-top: 100px;
+   margin-bottom: 150px;
+}
+
+.slider .slider-content h3 {
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+
+.slider .slider-content h1 {
+   font-size: 72px;
+   margin: 30px 0;
+}
+
+.slider .slider-content ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.slider .slider-content ul li {
+   margin: 0 25px;
+   text-transform: uppercase;
+   font-size: 13px;
+   position: relative;
+}
+
+.slider .slider-content ul li::after {
+   content: '';
+   /* background: #aaaaaa none repeat scroll 0 0; */
+   background: white none repeat scroll 0 0;
+   font-size: 12px;
+   height: 5px;
+   position: absolute;
+   right: -25px;
+   top: 50%;
+   transform: translateY(-50%) rotate(45deg);
+   width: 5px;
+}
+
+.slider .slider-social-icons ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.slider .slider-social-icons ul li {
+   margin: 0 10px;
+   display: inline;
+}
+
+.slider .slider-social-icons ul li a {
+   background: transparent none repeat scroll 0 0;
+   border: 1px solid white;
+   border-radius: 50%;
+   color: white;
+   display: inline-block;
+   font-size: 18px;
+   height: 48px;
+   line-height: 48px;
+   margin: 0 9px;
+   text-align: center;
+   width: 50px;
+}
+
+.about {
+   background-color: #121212;
+   padding: 80px 0;
+}
+
+.about .about-content {
+   display: flex;
+   align-items: center;
+}
+
+.about .about-content .about-profile {
+   margin: 0 30px;
+}
+
+.about .about-content .about-profile img {
+   border: 10px solid #1c1c1c;
+}
+
+.about .about-content .about-description {
+   margin: 0 30px;
+}
+
+.about .about-content .about-description h1 {
+   font-size: 30px;
+   font-weight: 600;
+   letter-spacing: 2px;
+   margin-bottom: 35px;
+}
+
+.about .about-content .about-description p {
+   color: #ababab;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 24px;
+   margin-bottom: 20px;
+}
+
+.about .about-content .about-description .about-buttons {
+   margin-top: 65px;
+}
+
+.about .about-content .about-description .about-buttons a {
+   padding: 15px 30px;
+   background-color: whitesmoke;
+   display: inline-block;
+   margin-right: 20px;
+   color: black;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 12px;
+   transition: all 0.3s ease-in-out;
+   border: 2px solid whitesmoke;
+}
+
+.about .about-content .about-description .about-buttons .download__cv {
+   background-color: transparent;
+   color: whitesmoke;
+}
+
+.about .about-content .about-description .about-buttons .hire__me:hover {
+   background-color: transparent;
+   border: 2px solid whitesmoke;
+   color: whitesmoke;
+}
+
+.about .about-content .about-description .about-buttons .download__cv:hover {
+   background-color: whitesmoke;
+   color: black;
+}
+
+.skills {
+   background-color: #121212;
+   padding: 30px 0;
+   text-align: center;
+}
+
+.skills h1 {
+   font-size: 30px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.skills .skills-content {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 40px;
+   margin: 65px 0;
+}
+
+.skills .skills-content .skills-content-wrapper {
+   margin-top: 50px;
+}
+
+.skills .skills-content .skills-content-wrapper .skills-content-progressbar {
+   border: 3px solid #a9a9a9;
+   position: relative;
+   vertical-align: middle;
+   display: inline-block;
+   width: 90%;
+   position: relative;
+}
+
+.skills .skills-content .skills-content-wrapper .skills-content-progressbar::before {
+   position: absolute;
+   top: -25px;
+   left: 0;
+   font-size: 12px;
+   letter-spacing: 1.2px;
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(1) ::before {
+   content: 'HTML & CSS';
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(2) ::before {
+   content: 'CORE JAVA';
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(3) ::before {
+   content: 'JAVA SCRIPT';
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(4) ::before {
+   content: 'NODE JS';
+}
+
+.skills .skills-content .skills-content-wrapper .skills-content-progressbar::after {
+   position: absolute;
+   top: -25px;
+   right: 0;
+   font-size: 12px;
+   letter-spacing: 1.2px;
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(1) ::after {
+   content: '90%';
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(2) ::after {
+   content: '85%';
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(3) ::after {
+   content: '90%';
+}
+
+.skills .skills-content .skills-content-wrapper:nth-child(4) ::after {
+   content: '70%';
+}
