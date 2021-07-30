@@ -31,4 +31,16 @@ window.addEventListener('load', () => {
    });
 
    sectionObserver.observe(skillsSection);
+
+   //
+
+   document.querySelector('.about-buttons .hire__me').addEventListener('click', () => {
+      alert('In-Progress');
+   });
+
+   document
+      .querySelector('.about-buttons .download__cv')
+      .addEventListener('click', () => {
+         alert('In-Progress');
+      });
 });
