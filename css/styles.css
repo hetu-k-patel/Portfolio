@@ -511,7 +511,6 @@ header nav.navbar .menu ul li a {
    width: 100%;
    height: 100%;
    opacity: 0.5;
-   background-image: url('../images/header-bg.jpg');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -519,6 +518,22 @@ header nav.navbar .menu ul li a {
 
 .projects .projects-wrapper .project-portfolio::before {
    background-image: url('../images/portfolio.png');
+}
+
+.projects .projects-wrapper .project-bookstore::before {
+   background-image: url('../images/bookstore.png');
+}
+
+.projects .projects-wrapper .project-memories::before {
+   background-image: url('../images/memories.png');
+}
+
+.projects .projects-wrapper .project-tiktok::before {
+   background-image: url('../images/tiktok.png');
+}
+
+.projects .projects-wrapper .project-tinder::before {
+   background-image: url('../images/tinder.png');
 }
 
 .projects .projects-wrapper .project-content .project-content-wrapper {
@@ -536,6 +551,14 @@ header nav.navbar .menu ul li a {
    transform: scale(0);
 }
 
+.projects .projects-wrapper .project-content a {
+   color: white;
+}
+
+.projects .projects-wrapper .project-content a i {
+   font-size: 30px;
+}
+
 .projects .projects-wrapper .project-content:hover .project-content-wrapper {
    opacity: 1;
    height: 100%;
@@ -546,6 +569,7 @@ header nav.navbar .menu ul li a {
    letter-spacing: 1.2px;
    line-height: 1.8;
    font-size: 14px;
+   margin-bottom: 15px;
 }
 
 .projects .projects-wrapper .project-content h2 {
